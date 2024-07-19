@@ -4,83 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Author" content="Abhishek Sinha, Milan Kumar Modak">
-    <meta name="Description" content="Website made for learning web development.">
-    <title>Homepage</title>
-    <style>
-        body{
-            background-color: rgb(204, 240, 250);
-        }   
+    <title>Home Page Online Server</title>
+    <link rel="stylesheet" href="home.css">
 
-        .header{
-            background-image: url(fire.jpg);
-        }
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 
-        .logo {
-            border: 0.5px black solid;
-            border-radius: 20px;
-            padding: 4px 4px 4px 4px;
-            display: inline-block;
-            position: absolute;
-            left: 30px;
-            top: 35px;
-            box-sizing: border-box;
-            background-color: rgb(58, 181, 215);
-        }
-        .logo-title{
-                    text-align: center;
-                    bottom: 50px;
-                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                    font-size: 17px;
-                    font-weight: bold;
-                }
-
-        .logo img {
-            width: 140px;
-            height: 80px;
-        }
-
-        .mid {
-            border: 2px rgb(0, 107, 117) solid;
-            border-radius: 20px;
-            display: block;
-            width: 70%;
-            margin: 35px auto;
-            overflow: auto;
-        }
-
-        .right {
-            position: absolute;
-            top: 35px;
-            right: 30px;
-            border: 2px green dashed;
-            display: inline-block;
-        }
-
-        .item{
-            float: left;
-            list-style: none;
-            margin: 45px 90px;
-        }
-
-    </style>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo"><img src="logo.png" alt="Go to Home">
-            <div class="logo-title">Online Server</div>
+    <nav id="navbar">
+        <div id="logo"><img src="/Logos/logospace.webp" alt="">
         </div>
-        <div class="mid">
-            <li class="item"><a href="">HOME</a></li>
-            <li class="item"><a href="">LOGIN</a></li>
-            <li class="item"><a href="">UPLOAD</a></li>
-            <li class="item"><a href="">FILES</a></li>
-            <li class="item"><a href="">LOGOUT</a></li>
-        </div>
-        <div class="right">This is right.</div>
-    </header>
 
+        <div id="nav">
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="item"><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="welcome-page">
+        <div id="welcome">
+            <h1 class="h-primary center">
+                Welcome to our online server
+            </h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vero facilis voluptatum accusamus, iste, veniam ut quaerat itaque ipsa incidunt assumenda, laudantium sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, dolore. Natus enim sed temporibus rerum quasi.</p>
+
+            <button class="btn">button &#x2192;</button>
+        </div>
+
+    </section>
+
+
+    <!-- social media handles -->
+
+    <section id="social">
+        <h1 class="h-primary center">social media handles</h1>
+        <div id="container">
+            <div class="box">
+                <h3 class="h-secondary center">@youtube</h3>
+                
+                <img src="/Logos/youtube-7737850_1280.png" title="YouTube"  style="width: 100px; height: 100px;">
+            </div>
+            <div class="box">
+                <h3 class="h-secondary center">@youtube</h3>
+
+                <img src="/Logos/facebook-2048127_1280.png" alt="" title="FaceBook">
+            </div>
+            <div class="box">
+                <h3 class="h-secondary center">@youtube</h3>
+
+                <img src="/Logos/instagram-2433265_1280.png" alt="" title="Instagram">
+            </div>
+            <div class="box">
+                <h3 class="h-secondary center">@youtube</h3>
+
+                <img src="/Logos/github.png" alt="" title="GitHub">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="center">
+        Copyright &copy; All rights reserved onlineserver.com
+    </footer>
 </body>
 
 </html>
